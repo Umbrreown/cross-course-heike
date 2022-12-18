@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Heike Berg">
+  <meta name="description" content="Website for on demand Indie movies">
+  <meta name="keywords" content="Indie movies, viewing, movies, indie">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Sign-up | SquareEyes</title>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div>
+        <a href="index.html"><img src="images/SquareEyes_Logo_dark3.png" alt="Square Eyes Logo"></a>
+    </div>
+    <div>
+    <div class="user-actions">
+      <div class="div-sign-up">
+        <a href="signup.html" id="sing-up">Sign up</a>
+      </div>
+      <div class="div-sign-in-btn">
+        <a href="/signup.html" id="sign-in">Sign in</a>
+      </div>
+    </div>
+    <div class="search-area">
+      <input type="text" placeholder="Search for..." name="search" class="input-field">
+      <a href="/search-result.html"><input class="btn" type="submit" value="Search"></a>
+    </div>
+  </div>
+  </header>
+  <div class="main-sign-in">
+    <div class="sign-in-box">
+      <h1 class="signin-text">Sign in</h1>
+        <input type="text" placeholder="Email" name="signin" class="sign-in-field">
+        <input type="text" placeholder="Password" name="password" class="sign-in-field">
+        <form action="/signed-in.html">
+          <button class="btn">Sign in</button>
+    </div>
+    <div class="devider"></div>
+
+    <div class="sign-up-box">
+      <h2 class="signup-text">Sign up</h2>
+        <input type="text" placeholder="Username" name="username" class="sign-up-field">
+        <input type="text" placeholder="Email" name="email" class="sign-up-field">
+        <input type="text" placeholder="Password" name="password" class="sign-up-field">
+        <input type="text" placeholder="Repeat Password" name="repeatpassword" class="sign-up-field">
+        <h3 class="card-info">Billing information</h3>
+        <input type="text" placeholder="Cardholder's Name" name="cardname" class="sign-up-field">
+        <input type="text" placeholder="Card Number" name="cardnumber" class="sign-up-field">
+        <input type="text" placeholder="mm/yy" name="expirationdate" class="sign-up-field">
+        <input type="text" placeholder="CVV Code" name="cvvcode" class="sign-up-field">
+        <form action="/signed-in.html">
+          <button class="btn">Sign up</button>
+    </div>
+  </div>
+  <div class="mobile-menu">
+    <a href="/signup.html"><img class="mobile-profile" src="/images/profile.png" alt="Profile"></a>
+    <a href="/signup.html"><img class="mobile-home" src="/images/home.png" alt="Home"></a>
+    <a href="/search-result.html"><img class="mobile-search-results" src="/images/search.png" alt="Search"></a>
+  </div>
+</div>
+</body>
+</html>

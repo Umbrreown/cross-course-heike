@@ -1,0 +1,738 @@
+/* ~~~~~~~~~~~~ Start of initialization ~~~~~~~~~~~~ */
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #212121;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+a:focus {
+  text-decoration: none;
+  color: #212121;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #212121;
+  cursor: pointer;
+}
+
+/* ~~~~~~~~~~~~ End of initialization ~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~ Start of site-wide styling ~~~~~~~~~~~~ */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  min-height: 5rem;
+  max-height: 5rem;
+  max-width: 98%;
+  justify-content: space-between;
+  padding: 1% 8% 2% 5%;
+  margin: 0% 0% 4% 0%;
+  background-color: #661515;
+  box-shadow: 0px 10px 15px black;
+}
+
+header div a img {
+  max-height: 130%;
+}
+
+header div a img:hover {
+  cursor: pointer;
+}
+
+.input-field {
+  margin-right: 0;
+  margin-top: 5%;
+  height: 1.5rem;
+  width: 15rem;
+}
+
+.btn {
+  background-color: #646464;
+  border: 1px solid #212121;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  margin-left: 0;
+  height: 1.93rem;
+  width: 6rem;
+}
+
+.btn:hover {
+  color: #212121;
+  cursor: pointer;
+}
+
+.main-trending {
+  background-color: #212121;
+  grid-area: trending;
+  width: 99%;
+  border: 2px solid #373736;
+  box-shadow: 0px 10px 15px black;
+}
+
+.text-trending {
+  color: #979797;
+  margin: 0;
+  padding-bottom: 2%;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.text-trending:hover {
+  color: #212121;
+  cursor: pointer;
+}
+
+.picture-reel {
+  display: flex;
+  justify-content: space-evenly;
+}
+.picture-reel img {
+  max-height: 12rem;
+}
+
+.picture-reel img:hover {
+  box-shadow: 0px 10px 15px black;
+  cursor: pointer;
+}
+
+.main-newest-releases {
+  background-color: #212121;
+  grid-area: releases;
+  width: 99%;
+  border: 2px solid #373736;
+  box-shadow: 0px 10px 15px black;
+}
+
+.text-newest-releases {
+  color: #979797;
+  margin: 0;
+  padding-bottom: 2%;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.text-newest-releases:hover {
+  color: #212121;
+  cursor: pointer;
+}
+
+/* ~~~~~~~~~~~~ End of site-wide styling ~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~ Start of Home page ~~~~~~~~~~~~ */
+
+.user-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2% 0%;
+  margin-bottom: 4%;
+}
+
+.div-sign-up {
+  margin: 0% 5% 0% 0%;
+}
+
+.div-sign-in-btn {
+  text-align: center;
+  min-width: 5%;
+  height: 2%;
+  padding: 0.5% 1%;
+  border: 1.2px solid #212121;
+  background-color: #646464;
+  border-radius: 10px;
+}
+
+.signup400px {
+  display: none;
+  align-self: center;
+  text-align: center;
+  max-width: 35%;
+  padding: 1% 2%;
+  margin-bottom: 5%;
+  border: 1.2px solid #212121;
+  background-color: #646464;
+  border-radius: 10px;
+}
+
+.main-home {
+  align-self: center;
+  display: grid;
+  grid-template-areas:
+    ". welcome welcome ."
+    ". trending releases .";
+  gap: 2rem;
+  width: 80%;
+  justify-content: center;
+  align-content: center;
+}
+
+.main-welcome {
+  width: 100%;
+  grid-area: welcome;
+  background-image: url(/images/welcome-bg.jpg);
+  box-shadow: 0px 10px 15px black;
+}
+
+.main-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2% 5% 2% 5%;
+  margin: 0.7%;
+  background-color: rgba(55, 55, 54, 0.4);
+}
+
+.main-inner-movies {
+  background-color: #373736;
+  margin: 0.4%;
+  padding: 2% 2%;
+}
+
+.text-welcome {
+  text-align: center;
+  margin-top: 6%;
+  font-size: x-large;
+  font-weight: 700;
+  max-width: 50%;
+  color: #979797;
+}
+
+.welcome-content {
+  margin-left: 20%;
+  color: #979797;
+  font-weight: bold;
+}
+
+.text-welcome-watch {
+  color: #979797;
+  font-weight: bold;
+}
+
+.welcometext400px {
+  display: none;
+  align-self: center;
+  text-align: center;
+  color: #979797;
+  font-weight: 600;
+}
+
+/* ~~~~~~~~~~~~ End of Home page ~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~ Start of Sign Up page ~~~~~~~~~~~~ */
+
+.main-sign-in {
+  display: grid;
+  grid-template-areas:
+    "signin devide . signup"
+    ". devide . signup"
+    ". devide . signup"
+    ". devide . signup";
+  width: 80%;
+  align-self: center;
+  color: #979797;
+}
+
+.devider {
+  grid-area: devide;
+  border-right: 4px solid #661515;
+}
+.sign-in-box {
+  display: flex;
+  flex-direction: column;
+  grid-area: signin;
+}
+
+.sign-in-field {
+  margin-right: 0;
+  margin-top: 1%;
+  height: 1.5rem;
+  width: 15rem;
+}
+
+.sign-up-box {
+  display: flex;
+  flex-direction: column;
+  grid-area: signup;
+}
+
+.sign-up-field {
+  margin-right: 0;
+  margin-top: 1%;
+  height: 1.5rem;
+  width: 15rem;
+}
+
+/* ~~~~~~~~~~~~ End of Sign Up page ~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~ Start of Signed-in page ~~~~~~~~~~~~ */
+
+.main-signedIn {
+  align-self: center;
+  display: grid;
+  grid-template-areas:
+    "starred recommended"
+    "trending releases";
+  gap: 2rem;
+  width: 80%;
+}
+
+.user-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2% 0%;
+  margin-bottom: 4%;
+}
+
+.div-profile {
+  margin: 0% 5% 0% 0%;
+}
+
+.div-profile-btn {
+  text-align: center;
+  min-width: 5%;
+  height: 2.3%;
+  padding: 0.7% 1%;
+  border: 1.4px solid #212121;
+  background-color: #646464;
+  border-radius: 10px;
+}
+
+.div-sign-out {
+  margin: 0% 0% 0% 5%;
+}
+
+.main-starred {
+  background-color: #212121;
+  grid-area: starred;
+  width: 99%;
+  border: 2px solid #373736;
+  box-shadow: 0px 10px 15px black;
+}
+
+.text-starred {
+  color: #979797;
+  margin: 0;
+  padding-bottom: 2%;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.text-starred:hover {
+  color: #212121;
+  cursor: pointer;
+}
+
+.main-recommended {
+  background-color: #212121;
+  grid-area: recommended;
+  width: 99%;
+  border: 2px solid #373736;
+  box-shadow: 0px 10px 15px black;
+}
+
+.text-recommended {
+  color: #979797;
+  margin: 0;
+  padding-bottom: 2%;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.text-recommended:hover {
+  color: #212121;
+  cursor: pointer;
+}
+
+/* ~~~~~~~~~~~~ End of Signed-in page ~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~ Start of Search Result page ~~~~~~~~~~~~ */
+
+.main-search-results {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.search-result-text {
+  color: #979797;
+  font-weight: bold;
+  margin-left: 8%;
+}
+/* ~~~~~~~~~~~~ End of Search Result page ~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~ Start of Preview page ~~~~~~~~~~~~ */
+.main-preview {
+  align-self: center;
+  display: grid;
+  grid-template-areas:
+    "box box box title title back"
+    "box box box title title back"
+    "box box box . . ."
+    "synopsis synopsis synopsis . . suggestions"
+    "synopsis synopsis synopsis . . suggestions";
+  width: 85%;
+}
+
+.preview-box {
+  grid-area: box;
+  background-color: #646464;
+  border: 2px solid #646464;
+  margin: 0 2rem 1rem 0;
+  background-image: url(/images/previewwebsite2.png);
+  min-height: 40vh;
+  min-width: 40vw;
+  max-width: 50vw;
+  background-size: cover;
+  background-position: center;
+}
+
+.preview-box:hover {
+  cursor: pointer;
+}
+
+.movie-description {
+  grid-area: title;
+  color: #979797;
+  font-weight: bold;
+}
+.movie-title-text {
+  font-weight: normal;
+}
+.back-btn {
+  grid-area: back;
+  text-align: end;
+}
+
+.movie-synopsis {
+  grid-area: synopsis;
+  color: #979797;
+  font-weight: bold;
+}
+
+.movie-synopsis-text {
+  font-weight: normal;
+}
+
+.movie-suggestions {
+  grid-area: suggestions;
+}
+/* ~~~~~~~~~~~~ End of Preview page ~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~ Start of Watch page ~~~~~~~~~~~~ */
+
+.watch-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.back-arrow {
+  height: 3rem;
+  width: 4rem;
+}
+
+.play-button-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  height: 33rem;
+}
+
+.play-button-div img {
+  height: 5rem;
+  width: 5rem;
+}
+
+/* ~~~~~~~~~~~~ End of Watch page ~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~ Start of Profile page ~~~~~~~~~~~~ */
+.main-profile {
+  align-self: center;
+  display: grid;
+  grid-template-areas:
+    ". . . . . . . ."
+    ". static dynamic . . . . history"
+    ". static dynamic . . . . history"
+    ". . . . . . . history"
+    ". . . . . . . ."
+    ". psw . . . . . ."
+    ". psw . . . . . ."
+    ". . . . . . . help";
+  width: 80%;
+  height: 35rem;
+  color: #979797;
+  font-weight: bold;
+}
+
+.profile-pic {
+  grid-area: pic;
+}
+
+.profile-pic img {
+  height: 100%;
+}
+
+.profile-text-static {
+  grid-area: static;
+}
+
+.profile-text-static :nth-child(1) {
+  color: #fff;
+}
+
+.profile-text-dynamic {
+  position: relative;
+  grid-area: dynamic;
+  top: 2.1rem;
+}
+
+.psw {
+  grid-area: psw;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.history {
+  grid-area: history;
+  color: #fff;
+}
+
+.history img {
+  max-height: 10rem;
+  box-shadow: 0px 10px 15px black;
+  cursor: pointer;
+}
+
+.help {
+  grid-area: help;
+  text-align: end;
+  align-self: flex-end;
+}
+
+/* ~~~~~~~~~~~~ End of Profile page ~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~ Start of Settings page ~~~~~~~~~~~~ */
+
+.main-settings {
+  align-self: center;
+  width: 80%;
+  color: white;
+  display: grid;
+  grid-template-areas:
+    "help . . . . . . ."
+    ". . . . . . . feedback"
+    "user . . . . . . feedback"
+    "email . . . . . . feedback"
+    ". . . . . . . send";
+}
+
+.feedback-help {
+  grid-area: help;
+  font-weight: bold;
+  font-size: large;
+}
+
+.username-change-field {
+  grid-area: user;
+  display: flex;
+  flex-direction: column;
+  color: #979797;
+  font-weight: bold;
+}
+
+.email-change-field {
+  grid-area: email;
+  display: flex;
+  flex-direction: column;
+  color: #979797;
+  font-weight: bold;
+}
+
+.feedback-field {
+  grid-area: feedback;
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-text {
+  color: #979797;
+  font-weight: bold;
+}
+
+.feedback-send-btn {
+  grid-area: send;
+}
+
+/* ~~~~~~~~~~~~ End of Settings page ~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~ Start of Mobile Menu ~~~~~~~~~~~~ */
+
+.mobile-menu {
+  display: none;
+}
+
+/* ~~~~~~~~~~~~ End of Mobile Menu ~~~~~~~~~~~~ */
+
+@media only screen and (max-width: 768px) {
+  header {
+    height: 8%;
+    width: 90%;
+  }
+
+  .div-sign-up {
+    display: none;
+  }
+  .div-sign-in-btn {
+    width: 5rem;
+    height: 1.4rem;
+    margin-top: 0.7rem;
+  }
+  .search-area {
+    display: none;
+  }
+  .main-welcome {
+    display: none;
+  }
+  main {
+    flex-direction: column;
+  }
+  .welcometext400px {
+    display: block;
+  }
+  .signup400px {
+    display: block;
+  }
+  .main-trending {
+    width: auto;
+    min-width: 300px;
+    margin: 2% 0%;
+  }
+  .main-newest-releases {
+    width: auto;
+    min-width: 300px;
+    margin: 2% 0%;
+  }
+  .picture-reel img {
+    max-height: 8rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .user-actions {
+    display: none;
+  }
+  .main-home {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-preview {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-profile {
+    display: flex;
+    flex-direction: column;
+  }
+  .profile-text-static {
+    display: none;
+  }
+  .profile-text-dynamic {
+    display: none;
+  }
+  .help {
+    align-self: center;
+    margin-top: 2rem;
+  }
+  .main-search-results {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-search-results .picture-reel {
+    display: block;
+    align-items: center;
+  }
+  .main-settings {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-sign-up {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-sign-in {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-watch {
+    display: flex;
+    flex-direction: column;
+  }
+  .preview-box {
+    min-height: 25vh;
+    min-width: 80vw;
+  }
+  .main-signedIn {
+    display: flex;
+    flex-direction: column;
+  }
+  .back-btn {
+    display: flex;
+    justify-content: center;
+  }
+  .mobile-menu {
+    position: sticky;
+    display: grid;
+    grid-template-areas: "profile home search";
+    background-color: #661515;
+    align-self: center;
+    justify-content: space-around;
+    width: 98%;
+  }
+  .mobile-profile {
+    grid-area: profile;
+    width: 15vw;
+  }
+  .mobile-home {
+    grid-area: home;
+    width: 15vw;
+  }
+  .mobile-search-results {
+    grid-area: search;
+    width: 15vw;
+  }
+  .main-trending {
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .main-newest-releases {
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .picture-reel img {
+    max-height: 6rem;
+  }
+}

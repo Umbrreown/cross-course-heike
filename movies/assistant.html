@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Heike Berg">
+  <meta name="description" content="Website for on demand Indie movies">
+  <meta name="keywords" content="Indie movies, viewing, movies, indie">
+  <link rel="stylesheet" href="/css/style.css">
+  <script defer src="/purchase.js"></script>
+  <title>Preview | SquareEyes</title>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div>
+      <a href="/signed-in.html"><img src="images/SquareEyes_Logo_dark3.png" alt="Square Eyes Logo"></a>
+    </div>
+    <div>
+      <div class="user-actions">
+        <div class="div-profile-btn">
+          <a href="/profile.html" id="profile">Profile</a>
+        </div>
+        <div class="div-sign-out">
+          <a href="index.html" id="sign-out">Sign out</a>
+        </div>
+    </div>
+    <div class="search-area">
+      <input type="text" placeholder="Search for..." name="search" class="input-field">
+      <a href="/search-result.html"><input class="btn" type="submit" value="Search"></a>
+    </div>
+  </div>
+  </header>
+  <div class="main-preview">
+    <div class="preview-box">
+    </div>
+    <div class="back-btn">
+      <a href="/search-result.html"><input class="btn" type="submit" value="Back"></a>
+    </div>
+    <div class="movie-description">
+    <p class="movie-title">THE ASSISTANT</p>
+    <p class="movie-title-text">Short info section for the movie, detailing the length, director, actors etc, as well as origin country and all necessary info.</p>
+    <form action="/purchase.html">
+    <button id="1" onclick="rentMovie(1)">Rent now!</button>
+    </form>
+    </div>
+    <div class="movie-synopsis">
+    <p >Longer synopsis of the movie, plot and more in-depth info.</p>
+    <p class="movie-synopsis-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
+      Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur 
+      ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat 
+      massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, 
+      rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+    </div>
+    <div class="movie-suggestions">
+      <div class="movie-synopsis">
+      <p>Suggested for you</p>
+      </div>
+      <div class="picture-reel">
+        <a href="/lynnlucy.html"><img src="images/lynnlucy.jpg" alt="Movie 1"></a>
+        <a href="/ema.html"><img src="images/ema.png" alt="Movie 2"></a>
+    </div>
+  </div>
+</div>
+<div class="mobile-menu">
+  <a href="/profile.html"><img class="mobile-profile" src="/images/profile.png" alt="Profile"></a>
+  <a href="/signed-in.html"><img class="mobile-home" src="/images/home.png" alt="Home"></a>
+  <a href="/search-result.html"><img class="mobile-search-results" src="/images/search.png" alt="Search"></a>
+</div>
+</div>
+</body>
+</html>

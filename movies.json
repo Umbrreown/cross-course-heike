@@ -1,0 +1,49 @@
+[
+    {
+        "id": 1,
+        "name": "The Assistant",
+        "image": "images/theassistant.jpg",
+        "price": 95
+        
+    },
+
+    {
+        "id": 2,
+        "name": "Ema",
+        "image": "images/ema.png",
+        "price": 95
+        
+    },
+
+    {
+        "id": 3,
+        "name": "Kajillionaire",
+        "image": "images/kajillionaire.jpg",
+        "price": 95
+        
+    },
+
+    {
+        "id": 4,
+        "name": "Lynn+Lucy",
+        "image": "images/lynnlucy.jpg",
+        "price": 95
+        
+    },
+
+    {
+        "id": 5,
+        "name": "Mangrove",
+        "image": "images/mangrove.jpg",
+        "price": 95
+        
+    },
+
+    {
+        "id": 6,
+        "name": "Nomadland",
+        "image": "images/nomadland.jpg",
+        "price": 95
+        
+    }
+]
